@@ -95,28 +95,3 @@ style.innerHTML = `
 `;
 
 document.head.appendChild(style);
-
-document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#8f8f8f!important;}</style>";
-
-  $("#game_start").click((event) => {
-    event.preventDefault();
-    $("#election_id_button").click((event) => {
-        event.preventDefault();
-        $(".container")[0].style.backgroundColor = "#000201"
-        nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#310707";
-        nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#310707";
-        $("#game_window")[0].style.borderColor = "#310707"
-        $("#game_window")[0].style.coloring_window = "#310707"
-        $(".container")[0].style.backgroundColor = "#834444";
-        $("#game_window")[0].style.backgroundImage = "url(https://i.imgur.com/2vgYH9X.png)"
-        document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#c8acac!important;}</style>";
-        document.body.background = "https://i.imgur.com/SuD78mb.png"
-        document.getElementById("header").src = "https://i.imgur.com/YmiQm1e.pngg"
-        nct_stuff.themes[nct_stuff.selectedTheme].text_col = "white"
-        e.election_json[0].fields.summary = "<p>HALDEMAN: Well, you know, with the situation in New York--</p>\n<p>PRESIDENT: Terrible.</p>\n<p>HALDEMAN:  Right. And combined with the, uh, midterm effect, Rockefeller's chances, not great.</p>\n<p><i>(Soft shuffling noises on desk)</i></p><p>EHRLICHMAN: At least against the squeaky clean types. O'Connor, <i>(unintelligible)</i> Morgenthau.</p>\n<p>PRESIDENT: <i>(pause)</i> What about against someone from Tammany?</p>"
-       e.election_json[0].fields.image_url = "https://i.imgur.com/NAsYCF8.png"
-        setInterval(changeFontColour, 200)
-        musicMode()
-  
-    })
-  })
