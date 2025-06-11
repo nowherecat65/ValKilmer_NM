@@ -135,4 +135,7 @@ document.body.background = "https://i.imgur.com/sxbbJcW.png/coolbackgrounds.io/i
 
 document.head.innerHTML += "<style>#results_container {color:#000000;} .inner_window_w_desc {background-color:#E8FBFF!important;}</style>";
 
+campaignTrail_temp.credits =
+  '<span style="color:#0D0D0D">.theanswerisme</span>';
+
 //#endcode
